@@ -17,6 +17,7 @@ class Game():
         print("DoBot is playing as: " + self.dobot)
 
     def setFirstTurn(self, firstTurn):
+        """ Set who goes first """
         if firstTurn == "1":
             self.turn = self.player
         elif firstTurn == "2":
@@ -65,7 +66,7 @@ class Game():
         self.checkPattern(0, 4, 8)
         self.checkPattern(2, 4, 6)
 
-        #Tie if no empty spaces left
+        """ Tie if no empty spaces left """
         if "_" not in self.board:
             print("IT'S A TIE!!")
             exit()
@@ -86,9 +87,6 @@ class Game():
             print("DOBOT WINS!!")
 
         exit()
-
-
-
 
 if __name__ == "__main__":
     Game()

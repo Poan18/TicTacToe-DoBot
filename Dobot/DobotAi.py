@@ -1,8 +1,8 @@
 import random
 import time
 from DobotMovement import DobotMovement
-""" Module with DobotAi class """
 
+""" Module with DobotAi class """
 
 class DobotAi():
     """ DobotAi decisions """
@@ -13,12 +13,11 @@ class DobotAi():
         self.dm = dm
 
     def decideMove(self):
+        """ Calculated where to place his piece """
+
         while True:
             rngPlace = random.randint(0, 8)
             if self.currGame.board[int(rngPlace)] == "_":
-                print("Before place")
-                print(rngPlace)
                 self.dm.placePos(rngPlace)
-                print("After place")
                 time.sleep(3)
                 return rngPlace
