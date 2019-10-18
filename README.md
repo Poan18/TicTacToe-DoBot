@@ -14,7 +14,7 @@ The playing field used is 15x15cm and drawn on a regular piece of paper. The pla
 How to play?
 
 1. Download the repo
-2. Run the calibration 'python calibration.py' and follow the instructions
+2. Run the calibration 'python Calibrate.py' and follow the instructions
 3. Run 'python start.py' to start the game
 4. Enjoy!
 
